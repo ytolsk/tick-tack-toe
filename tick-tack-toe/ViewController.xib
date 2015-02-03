@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="collectionView" destination="PLi-2U-UXR" id="3fl-ZX-CSg"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hro-UL-q2D"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PLi-2U-UXR">
+                    <rect key="frame" x="131" y="133" width="338" height="334"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PLi-2U-UXR" secondAttribute="height" multiplier="1:1" id="Vbh-Mf-ClM"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="3" id="PFj-d8-2dS">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Vbh-Mf-ClM"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Vbh-Mf-ClM"/>
+                        </mask>
+                    </variation>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PLi-2U-UXR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="4oi-8n-szk"/>
+                <constraint firstAttribute="centerY" secondItem="PLi-2U-UXR" secondAttribute="centerY" id="7X2-uw-Rbb"/>
+                <constraint firstAttribute="centerX" secondItem="PLi-2U-UXR" secondAttribute="centerX" id="Ofj-5p-fcp"/>
+                <constraint firstAttribute="trailing" secondItem="PLi-2U-UXR" secondAttribute="trailing" constant="30" id="UtY-xf-Kb1"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4oi-8n-szk"/>
+                    <exclude reference="7X2-uw-Rbb"/>
+                    <exclude reference="Ofj-5p-fcp"/>
+                    <exclude reference="UtY-xf-Kb1"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="4oi-8n-szk"/>
+                    <include reference="7X2-uw-Rbb"/>
+                    <include reference="Ofj-5p-fcp"/>
+                    <include reference="UtY-xf-Kb1"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="719" y="627"/>
+        </view>
+    </objects>
+</document>

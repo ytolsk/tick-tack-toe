@@ -10,10 +10,10 @@
 		AE1D52401A81595400A24905 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D523F1A81595400A24905 /* main.m */; };
 		AE1D52431A81595400A24905 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52421A81595400A24905 /* AppDelegate.m */; };
 		AE1D52461A81595400A24905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52451A81595400A24905 /* ViewController.m */; };
-		AE1D52491A81595400A24905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1D52471A81595400A24905 /* Main.storyboard */; };
 		AE1D524B1A81595400A24905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1D524A1A81595400A24905 /* Images.xcassets */; };
 		AE1D524E1A81595400A24905 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D524C1A81595400A24905 /* LaunchScreen.xib */; };
 		AE1D525A1A81595400A24905 /* tick_tack_toeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52591A81595400A24905 /* tick_tack_toeTests.m */; };
+		AE1D52641A815A3900A24905 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D52631A815A3900A24905 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,12 @@
 		AE1D52421A81595400A24905 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AE1D52441A81595400A24905 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AE1D52451A81595400A24905 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AE1D52481A81595400A24905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE1D524A1A81595400A24905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE1D524D1A81595400A24905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AE1D52531A81595400A24905 /* tick-tack-toeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tick-tack-toeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1D52581A81595400A24905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE1D52591A81595400A24905 /* tick_tack_toeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tick_tack_toeTests.m; sourceTree = "<group>"; };
+		AE1D52631A815A3900A24905 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				AE1D52411A81595400A24905 /* AppDelegate.h */,
 				AE1D52421A81595400A24905 /* AppDelegate.m */,
-				AE1D52441A81595400A24905 /* ViewController.h */,
-				AE1D52451A81595400A24905 /* ViewController.m */,
-				AE1D52471A81595400A24905 /* Main.storyboard */,
 				AE1D524A1A81595400A24905 /* Images.xcassets */,
 				AE1D524C1A81595400A24905 /* LaunchScreen.xib */,
 				AE1D523D1A81595400A24905 /* Supporting Files */,
+				AE1D52441A81595400A24905 /* ViewController.h */,
+				AE1D52451A81595400A24905 /* ViewController.m */,
+				AE1D52631A815A3900A24905 /* ViewController.xib */,
 			);
 			path = "tick-tack-toe";
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1D52491A81595400A24905 /* Main.storyboard in Resources */,
 				AE1D524E1A81595400A24905 /* LaunchScreen.xib in Resources */,
+				AE1D52641A815A3900A24905 /* ViewController.xib in Resources */,
 				AE1D524B1A81595400A24905 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AE1D52471A81595400A24905 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE1D52481A81595400A24905 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AE1D524C1A81595400A24905 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -348,6 +340,7 @@
 				INFOPLIST_FILE = "tick-tack-toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -358,6 +351,7 @@
 				INFOPLIST_FILE = "tick-tack-toe/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
