@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "CollectionViewCell.h"
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-
+@property(assign,nonatomic) BOOL useO;
 @end
+
 
 @implementation ViewController
 
@@ -19,7 +21,9 @@
     
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"CollectionViewCell" bundle:nil]
+          forCellWithReuseIdentifier:@"Cell"];
 }
 
 #pragma mark - <UICollectionViewDataSource>
@@ -29,8 +33,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     return cell;
 }
 
@@ -39,6 +42,21 @@
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGFloat width = floorf(CGRectGetWidth(self.collectionView.frame) / 3) - 6;
     return CGSizeMake(width, width);
+}
+
+#pragma mark - <UICollectionViewDelegate>
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionViewCell *cell = (CollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    if (cell.empty){
+        if (self.useO) {
+            [cell displayO];
+            self.useO = NO;
+        } else {
+            self.useO = YES;
+            [cell displayX];
+        }
+    }
 }
 
 @end

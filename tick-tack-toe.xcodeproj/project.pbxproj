@@ -14,6 +14,8 @@
 		AE1D524E1A81595400A24905 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D524C1A81595400A24905 /* LaunchScreen.xib */; };
 		AE1D525A1A81595400A24905 /* tick_tack_toeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52591A81595400A24905 /* tick_tack_toeTests.m */; };
 		AE1D52641A815A3900A24905 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D52631A815A3900A24905 /* ViewController.xib */; };
+		AE1D526B1A81835400A24905 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D526A1A81835400A24905 /* CollectionViewCell.m */; };
+		AE1D526D1A8183EF00A24905 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		AE1D52581A81595400A24905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE1D52591A81595400A24905 /* tick_tack_toeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tick_tack_toeTests.m; sourceTree = "<group>"; };
 		AE1D52631A815A3900A24905 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		AE1D52691A81835400A24905 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		AE1D526A1A81835400A24905 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +88,11 @@
 			children = (
 				AE1D52411A81595400A24905 /* AppDelegate.h */,
 				AE1D52421A81595400A24905 /* AppDelegate.m */,
+				AE1D52651A81819500A24905 /* Controllers */,
 				AE1D524A1A81595400A24905 /* Images.xcassets */,
 				AE1D524C1A81595400A24905 /* LaunchScreen.xib */,
 				AE1D523D1A81595400A24905 /* Supporting Files */,
-				AE1D52441A81595400A24905 /* ViewController.h */,
-				AE1D52451A81595400A24905 /* ViewController.m */,
-				AE1D52631A815A3900A24905 /* ViewController.xib */,
+				AE1D52661A8181C000A24905 /* Views */,
 			);
 			path = "tick-tack-toe";
 			sourceTree = "<group>";
@@ -117,6 +121,26 @@
 				AE1D52581A81595400A24905 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE1D52651A81819500A24905 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE1D52441A81595400A24905 /* ViewController.h */,
+				AE1D52451A81595400A24905 /* ViewController.m */,
+				AE1D52631A815A3900A24905 /* ViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AE1D52661A8181C000A24905 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE1D52691A81835400A24905 /* CollectionViewCell.h */,
+				AE1D526A1A81835400A24905 /* CollectionViewCell.m */,
+				AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +225,7 @@
 			files = (
 				AE1D524E1A81595400A24905 /* LaunchScreen.xib in Resources */,
 				AE1D52641A815A3900A24905 /* ViewController.xib in Resources */,
+				AE1D526D1A8183EF00A24905 /* CollectionViewCell.xib in Resources */,
 				AE1D524B1A81595400A24905 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +246,7 @@
 			files = (
 				AE1D52461A81595400A24905 /* ViewController.m in Sources */,
 				AE1D52431A81595400A24905 /* AppDelegate.m in Sources */,
+				AE1D526B1A81835400A24905 /* CollectionViewCell.m in Sources */,
 				AE1D52401A81595400A24905 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
