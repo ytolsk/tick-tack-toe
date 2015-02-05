@@ -12,14 +12,20 @@
 		AE1D52461A81595400A24905 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52451A81595400A24905 /* ViewController.m */; };
 		AE1D524B1A81595400A24905 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1D524A1A81595400A24905 /* Images.xcassets */; };
 		AE1D524E1A81595400A24905 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D524C1A81595400A24905 /* LaunchScreen.xib */; };
-		AE1D525A1A81595400A24905 /* tick_tack_toeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52591A81595400A24905 /* tick_tack_toeTests.m */; };
 		AE1D52641A815A3900A24905 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D52631A815A3900A24905 /* ViewController.xib */; };
 		AE1D526B1A81835400A24905 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D526A1A81835400A24905 /* CollectionViewCell.m */; };
 		AE1D526D1A8183EF00A24905 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */; };
+		AE4E2D821A842376000752A4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D811A842376000752A4 /* XCTest.framework */; };
+		AE4E2D841A842376000752A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D831A842376000752A4 /* CoreGraphics.framework */; };
+		AE4E2D861A842376000752A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D851A842376000752A4 /* UIKit.framework */; };
+		AE4E2D881A842376000752A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D871A842376000752A4 /* Foundation.framework */; };
+		AE4E2D8D1A842376000752A4 /* tick-tack-toe Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2D8C1A842376000752A4 /* tick-tack-toe Tests-Info.plist */; };
+		AE4E2D921A842376000752A4 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D911A842376000752A4 /* Cedar-iOS.framework */; };
+		AE4E2D991A8423E5000752A4 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE4E2D981A8423E5000752A4 /* ViewControllerSpec.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AE1D52541A81595400A24905 /* PBXContainerItemProxy */ = {
+		AE4E2D931A842376000752A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AE1D52321A81595400A24905 /* Project object */;
 			proxyType = 1;
@@ -38,13 +44,20 @@
 		AE1D52451A81595400A24905 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AE1D524A1A81595400A24905 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE1D524D1A81595400A24905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AE1D52531A81595400A24905 /* tick-tack-toeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tick-tack-toeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE1D52581A81595400A24905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE1D52591A81595400A24905 /* tick_tack_toeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tick_tack_toeTests.m; sourceTree = "<group>"; };
 		AE1D52631A815A3900A24905 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		AE1D52691A81835400A24905 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		AE1D526A1A81835400A24905 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		AE4E2D7F1A842376000752A4 /* tick-tack-toe Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tick-tack-toe Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4E2D811A842376000752A4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AE4E2D831A842376000752A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = /System/Library/Frameworks/CoreGraphics.framework; sourceTree = "<absolute>"; };
+		AE4E2D851A842376000752A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AE4E2D871A842376000752A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		AE4E2D8B1A842376000752A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4E2D8C1A842376000752A4 /* tick-tack-toe Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tick-tack-toe Tests-Info.plist"; sourceTree = "<group>"; };
+		AE4E2D901A842376000752A4 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		AE4E2D911A842376000752A4 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		AE4E2D981A8423E5000752A4 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +68,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE1D52501A81595400A24905 /* Frameworks */ = {
+		AE4E2D781A842376000752A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4E2D841A842376000752A4 /* CoreGraphics.framework in Frameworks */,
+				AE4E2D861A842376000752A4 /* UIKit.framework in Frameworks */,
+				AE4E2D921A842376000752A4 /* Cedar-iOS.framework in Frameworks */,
+				AE4E2D821A842376000752A4 /* XCTest.framework in Frameworks */,
+				AE4E2D881A842376000752A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4E2D7B1A842376000752A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -68,8 +93,10 @@
 		AE1D52311A81595400A24905 = {
 			isa = PBXGroup;
 			children = (
+				AE1D52741A8422D400A24905 /* Externals */,
 				AE1D523C1A81595400A24905 /* tick-tack-toe */,
-				AE1D52561A81595400A24905 /* tick-tack-toeTests */,
+				AE4E2D891A842376000752A4 /* tick-tack-toe Tests */,
+				AE4E2D801A842376000752A4 /* Frameworks */,
 				AE1D523B1A81595400A24905 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				AE1D523A1A81595400A24905 /* tick-tack-toe.app */,
-				AE1D52531A81595400A24905 /* tick-tack-toeTests.xctest */,
+				AE4E2D7F1A842376000752A4 /* tick-tack-toe Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,23 +133,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE1D52561A81595400A24905 /* tick-tack-toeTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE1D52591A81595400A24905 /* tick_tack_toeTests.m */,
-				AE1D52571A81595400A24905 /* Supporting Files */,
-			);
-			path = "tick-tack-toeTests";
-			sourceTree = "<group>";
-		};
-		AE1D52571A81595400A24905 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AE1D52581A81595400A24905 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		AE1D52651A81819500A24905 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,44 @@
 				AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		AE1D52741A8422D400A24905 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		AE4E2D801A842376000752A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE4E2D811A842376000752A4 /* XCTest.framework */,
+				AE4E2D831A842376000752A4 /* CoreGraphics.framework */,
+				AE4E2D851A842376000752A4 /* UIKit.framework */,
+				AE4E2D871A842376000752A4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4E2D891A842376000752A4 /* tick-tack-toe Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AE4E2D8C1A842376000752A4 /* tick-tack-toe Tests-Info.plist */,
+				AE4E2D901A842376000752A4 /* Rakefile */,
+				AE4E2D911A842376000752A4 /* Cedar-iOS.framework */,
+				AE4E2D8A1A842376000752A4 /* Supporting Files */,
+				AE4E2D981A8423E5000752A4 /* ViewControllerSpec.mm */,
+			);
+			path = "tick-tack-toe Tests";
+			sourceTree = "<group>";
+		};
+		AE4E2D8A1A842376000752A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4E2D8B1A842376000752A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,22 +211,26 @@
 			productReference = AE1D523A1A81595400A24905 /* tick-tack-toe.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE1D52521A81595400A24905 /* tick-tack-toeTests */ = {
+		AE4E2D7E1A842376000752A4 /* tick-tack-toe Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE1D52601A81595400A24905 /* Build configuration list for PBXNativeTarget "tick-tack-toeTests" */;
+			buildConfigurationList = AE4E2D971A842376000752A4 /* Build configuration list for PBXNativeTarget "tick-tack-toe Tests" */;
 			buildPhases = (
-				AE1D524F1A81595400A24905 /* Sources */,
-				AE1D52501A81595400A24905 /* Frameworks */,
-				AE1D52511A81595400A24905 /* Resources */,
+				AE4E2D771A842376000752A4 /* Sources */,
+				AE4E2D781A842376000752A4 /* Frameworks */,
+				AE4E2D791A842376000752A4 /* Resources */,
+				AE4E2D7A1A842376000752A4 /* Sources */,
+				AE4E2D7B1A842376000752A4 /* Frameworks */,
+				AE4E2D7C1A842376000752A4 /* Resources */,
+				AE4E2D7D1A842376000752A4 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AE1D52551A81595400A24905 /* PBXTargetDependency */,
+				AE4E2D941A842376000752A4 /* PBXTargetDependency */,
 			);
-			name = "tick-tack-toeTests";
-			productName = "tick-tack-toeTests";
-			productReference = AE1D52531A81595400A24905 /* tick-tack-toeTests.xctest */;
+			name = "tick-tack-toe Tests";
+			productName = "tick-tack-toe Tests";
+			productReference = AE4E2D7F1A842376000752A4 /* tick-tack-toe Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +245,7 @@
 					AE1D52391A81595400A24905 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					AE1D52521A81595400A24905 = {
+					AE4E2D7E1A842376000752A4 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = AE1D52391A81595400A24905;
 					};
@@ -213,7 +265,7 @@
 			projectRoot = "";
 			targets = (
 				AE1D52391A81595400A24905 /* tick-tack-toe */,
-				AE1D52521A81595400A24905 /* tick-tack-toeTests */,
+				AE4E2D7E1A842376000752A4 /* tick-tack-toe Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -230,7 +282,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE1D52511A81595400A24905 /* Resources */ = {
+		AE4E2D791A842376000752A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4E2D8D1A842376000752A4 /* tick-tack-toe Tests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4E2D7C1A842376000752A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,6 +298,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE4E2D7D1A842376000752A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n            \"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n            ";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE1D52361A81595400A24905 /* Sources */ = {
@@ -251,21 +327,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE1D524F1A81595400A24905 /* Sources */ = {
+		AE4E2D771A842376000752A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1D525A1A81595400A24905 /* tick_tack_toeTests.m in Sources */,
+				AE4E2D991A8423E5000752A4 /* ViewControllerSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4E2D7A1A842376000752A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AE1D52551A81595400A24905 /* PBXTargetDependency */ = {
+		AE4E2D941A842376000752A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AE1D52391A81595400A24905 /* tick-tack-toe */;
-			targetProxy = AE1D52541A81595400A24905 /* PBXContainerItemProxy */;
+			targetProxy = AE4E2D931A842376000752A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -381,37 +464,63 @@
 			};
 			name = Release;
 		};
-		AE1D52611A81595400A24905 /* Debug */ = {
+		AE4E2D951A842376000752A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/tick-tack-toe",
+					Tests/Frameworks,
 				);
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "tick-tack-toeTests/Info.plist";
+				INFOPLIST_FILE = "tick-tack-toe Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tick-tack-toe.app/tick-tack-toe";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		AE1D52621A81595400A24905 /* Release */ = {
+		AE4E2D961A842376000752A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/tick-tack-toe",
+					Tests/Frameworks,
+				);
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "tick-tack-toe Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "tick-tack-toeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tick-tack-toe.app/tick-tack-toe";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -434,12 +543,13 @@
 				AE1D525F1A81595400A24905 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		AE1D52601A81595400A24905 /* Build configuration list for PBXNativeTarget "tick-tack-toeTests" */ = {
+		AE4E2D971A842376000752A4 /* Build configuration list for PBXNativeTarget "tick-tack-toe Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AE1D52611A81595400A24905 /* Debug */,
-				AE1D52621A81595400A24905 /* Release */,
+				AE4E2D951A842376000752A4 /* Debug */,
+				AE4E2D961A842376000752A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

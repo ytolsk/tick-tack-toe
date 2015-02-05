@@ -34,6 +34,20 @@
                ReferencedContainer = "container:tick-tack-toe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AE4E2D7E1A842376000752A4"
+               BuildableName = "tick-tack-toe Tests.xctest"
+               BlueprintName = "tick-tack-toe Tests"
+               ReferencedContainer = "container:tick-tack-toe.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -46,9 +60,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE1D52521A81595400A24905"
-               BuildableName = "tick-tack-toeTests.xctest"
-               BlueprintName = "tick-tack-toeTests"
+               BlueprintIdentifier = "AE4E2D7E1A842376000752A4"
+               BuildableName = "tick-tack-toe Tests.xctest"
+               BlueprintName = "tick-tack-toe Tests"
                ReferencedContainer = "container:tick-tack-toe.xcodeproj">
             </BuildableReference>
          </TestableReference>
