@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    PlayerTypeX = 0,
+    PlayerTypeO,
+    PlayerTypeNone,
+} PlayerType;
+
+
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;

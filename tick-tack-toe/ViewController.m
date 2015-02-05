@@ -12,8 +12,6 @@
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIAlertViewDelegate>
 
 @property (assign,nonatomic) BOOL useO;
-@property (assign,nonatomic) BOOL xWon;
-@property (assign,nonatomic) BOOL oWon;
 @property (strong, nonatomic) NSMutableArray *rowScores;
 @property (strong, nonatomic) NSMutableArray *columnScores;
 @property (assign, nonatomic) NSInteger diagonalScore;
@@ -89,7 +87,7 @@
 - (void)incrementScore:(NSInteger)score forIndex:(NSInteger)index {
     NSInteger row = floor(index/3);
     NSInteger column = index % 3;
-    self.rowScores[row] = @([self.rowScores[row] integerValue] + score); // have to convert to NSNumber because array is a collection of pointers, but can't do math with NSNumbers (only with NsIntegers or NSDecimalNumbers for precision)
+    self.rowScores[row] = @([self.rowScores[row] integerValue] + score); // have to convert to NSNumber because array is a collection of pointers, but can't do math with NSNumbers (only with NSIntegers or NSDecimalNumbers for precision)
     self.columnScores[column] = @([self.columnScores[column] integerValue] + score);
     if (row == column) {
         self.diagonalScore += score;
@@ -98,23 +96,21 @@
         self.antiDiagonalScore += score;
     }
     
-    if ([self checkForWinner]) {
-        [self displayWinner];
+    if ([self checkForWinner] == PlayerTypeO || [self checkForWinner] == PlayerTypeX) {
+        [self displayWinner: [self checkForWinner]];
     } else if ([self checkForDraw]) {
         [self displayDraw];
     }
 }
 
-- (BOOL)checkForWinner {
+- (PlayerType)checkForWinner {
     if ([self.rowScores containsObject:@3] || [self.columnScores containsObject:@3] || self.diagonalScore == 3 || self.antiDiagonalScore == 3) {
-        self.xWon = YES;
-        return YES;
+        return PlayerTypeX;
     }
     if ([self.rowScores containsObject:@(-3)] || [self.columnScores containsObject:@(-3)] ||self.diagonalScore == -3 || self.antiDiagonalScore == -3) {
-        self.oWon = YES;
-        return YES;
+        return PlayerTypeO;
     }
-    return NO;
+    return PlayerTypeNone;
 }
 
 - (BOOL)checkForDraw {
@@ -126,9 +122,9 @@
     return YES;
 }
 
-- (void)displayWinner {
+- (void)displayWinner: (PlayerType)playerType {
     NSString *player = @"Player X";
-    if (self.oWon) { player = @"Player O"; }
+    if (playerType == PlayerTypeO) { player = @"Player O"; }
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WINNER!"
                                                     message:[NSString stringWithFormat:@"%@ %@", player, @"won!"]
@@ -155,11 +151,9 @@
 - (void)resetScores {
     self.useO = NO;
     self.rowScores = [NSMutableArray arrayWithObjects:@0, @0, @0, nil];
-    self.columnScores = [NSMutableArray arrayWithObjects:@0, @0, @0, nil]; // have to end array init. with nil
+    self.columnScores = [NSMutableArray arrayWithObjects:@0, @0, @0, nil]; // have to end arrayWithObjects: with nil
     self.diagonalScore = 0;
     self.antiDiagonalScore = 0;
-    self.xWon = NO;
-    self.oWon = NO;
 }
 
 @end
