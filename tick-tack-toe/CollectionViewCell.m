@@ -34,4 +34,9 @@
     self.empty = NO;
 }
 
+- (void)reset {
+    self.label.text = nil;
+    self.empty = YES;
+}
+
 @end

@@ -9,12 +9,28 @@
 #import "ViewController.h"
 #import "CollectionViewCell.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
-@property(assign,nonatomic) BOOL useO;
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIAlertViewDelegate>
+
+@property (assign,nonatomic) BOOL useO;
+@property (assign,nonatomic) BOOL xWon;
+@property (assign,nonatomic) BOOL oWon;
+@property (strong, nonatomic) NSMutableArray *rowScores;
+@property (strong, nonatomic) NSMutableArray *columnScores;
+@property (assign, nonatomic) NSInteger diagonalScore;
+@property (assign, nonatomic) NSInteger antiDiagonalScore;
+
 @end
 
 
 @implementation ViewController
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [self resetScores];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +50,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    [cell reset];
     return cell;
 }
 
@@ -52,11 +69,97 @@
         if (self.useO) {
             [cell displayO];
             self.useO = NO;
+            [self incrementScore:-1 forIndex:indexPath.row];
         } else {
             self.useO = YES;
             [cell displayX];
+            [self incrementScore:1 forIndex:indexPath.row];
         }
     }
+}
+
+#pragma mark - <UIAlertViewDelegate>
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self clearBoard];
+}
+
+#pragma mark - Private
+
+- (void)incrementScore:(NSInteger)score forIndex:(NSInteger)index {
+    NSInteger row = floor(index/3);
+    NSInteger column = index % 3;
+    self.rowScores[row] = @([self.rowScores[row] integerValue] + score); // have to convert to NSNumber because array is a collection of pointers, but can't do math with NSNumbers (only with NsIntegers or NSDecimalNumbers for precision)
+    self.columnScores[column] = @([self.columnScores[column] integerValue] + score);
+    if (row == column) {
+        self.diagonalScore += score;
+    }
+    if (row + column == 2){
+        self.antiDiagonalScore += score;
+    }
+    
+    if ([self checkForWinner]) {
+        [self displayWinner];
+    } else if ([self checkForDraw]) {
+        [self displayDraw];
+    }
+}
+
+- (BOOL)checkForWinner {
+    if ([self.rowScores containsObject:@3] || [self.columnScores containsObject:@3] || self.diagonalScore == 3 || self.antiDiagonalScore == 3) {
+        self.xWon = YES;
+        return YES;
+    }
+    if ([self.rowScores containsObject:@(-3)] || [self.columnScores containsObject:@(-3)] ||self.diagonalScore == -3 || self.antiDiagonalScore == -3) {
+        self.oWon = YES;
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)checkForDraw {
+    for (CollectionViewCell *cell in  self.collectionView.visibleCells) {
+        if (cell.empty) {
+            return NO;
+        }
+    }
+    return YES;
+}
+
+- (void)displayWinner {
+    NSString *player = @"Player X";
+    if (self.oWon) { player = @"Player O"; }
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WINNER!"
+                                                    message:[NSString stringWithFormat:@"%@ %@", player, @"won!"]
+                                                   delegate:self
+                                          cancelButtonTitle:@"Play again"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)displayDraw {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Draw!"
+                                                    message:@"No one wins. Everyone loses! 😈"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Play again"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+- (void)clearBoard {
+    [self resetScores];
+    [self.collectionView reloadData];
+}
+
+- (void)resetScores {
+    self.useO = NO;
+    self.rowScores = [NSMutableArray arrayWithObjects:@0, @0, @0, nil];
+    self.columnScores = [NSMutableArray arrayWithObjects:@0, @0, @0, nil]; // have to end array init. with nil
+    self.diagonalScore = 0;
+    self.antiDiagonalScore = 0;
+    self.xWon = NO;
+    self.oWon = NO;
 }
 
 @end

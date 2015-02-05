@@ -14,5 +14,6 @@
 
 - (void)displayX;
 - (void)displayO;
+- (void)reset;
 
 @end
