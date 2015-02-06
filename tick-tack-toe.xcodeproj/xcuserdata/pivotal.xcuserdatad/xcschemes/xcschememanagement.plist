@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Specs.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>tick-tack-toe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>AE4E2D7E1A842376000752A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE4E2D9D1A845017000752A4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

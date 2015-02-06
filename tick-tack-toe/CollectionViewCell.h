@@ -10,6 +10,7 @@
 
 @interface CollectionViewCell : UICollectionViewCell
 
+@property (strong, nonatomic, readonly) UILabel *label;
 @property (assign, nonatomic, readonly) BOOL empty;
 
 - (void)displayX;

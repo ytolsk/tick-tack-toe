@@ -22,6 +22,20 @@
 		AE4E2D8D1A842376000752A4 /* tick-tack-toe Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2D8C1A842376000752A4 /* tick-tack-toe Tests-Info.plist */; };
 		AE4E2D921A842376000752A4 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D911A842376000752A4 /* Cedar-iOS.framework */; };
 		AE4E2D991A8423E5000752A4 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE4E2D981A8423E5000752A4 /* ViewControllerSpec.mm */; };
+		AE4E2D9F1A845017000752A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D851A842376000752A4 /* UIKit.framework */; };
+		AE4E2DA01A845017000752A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D871A842376000752A4 /* Foundation.framework */; };
+		AE4E2DA11A845017000752A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2D831A842376000752A4 /* CoreGraphics.framework */; };
+		AE4E2DA71A845017000752A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4E2DA61A845017000752A4 /* main.m */; };
+		AE4E2DA91A845017000752A4 /* Specs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2DA81A845017000752A4 /* Specs-Info.plist */; };
+		AE4E2DAB1A845017000752A4 /* Specs-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2DAA1A845017000752A4 /* Specs-Prefix.pch */; };
+		AE4E2DAD1A845018000752A4 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE4E2DAC1A845018000752A4 /* Cedar-iOS.framework */; };
+		AE4E2DAF1A845018000752A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE4E2DAE1A845018000752A4 /* Default-568h@2x.png */; };
+		AE4E2DB61A84502E000752A4 /* ViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE4E2DB51A84502E000752A4 /* ViewControllerSpec.mm */; };
+		AE4E2DB71A84505E000752A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52451A81595400A24905 /* ViewController.m */; };
+		AE4E2DB81A84506F000752A4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D52631A815A3900A24905 /* ViewController.xib */; };
+		AE4E2DB91A845072000752A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D52421A81595400A24905 /* AppDelegate.m */; };
+		AE4E2DBA1A845081000752A4 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE1D526C1A8183EF00A24905 /* CollectionViewCell.xib */; };
+		AE4E2DBB1A845084000752A4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1D526A1A81835400A24905 /* CollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +72,15 @@
 		AE4E2D901A842376000752A4 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		AE4E2D911A842376000752A4 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		AE4E2D981A8423E5000752A4 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
+		AE4E2D9E1A845017000752A4 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4E2DA41A845017000752A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE4E2DA51A845017000752A4 /* Rakefile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		AE4E2DA61A845017000752A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE4E2DA81A845017000752A4 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
+		AE4E2DAA1A845017000752A4 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		AE4E2DAC1A845018000752A4 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		AE4E2DAE1A845018000752A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE4E2DB51A84502E000752A4 /* ViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerSpec.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +110,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE4E2D9B1A845017000752A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4E2DA11A845017000752A4 /* CoreGraphics.framework in Frameworks */,
+				AE4E2D9F1A845017000752A4 /* UIKit.framework in Frameworks */,
+				AE4E2DAD1A845018000752A4 /* Cedar-iOS.framework in Frameworks */,
+				AE4E2DA01A845017000752A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -96,6 +130,7 @@
 				AE1D52741A8422D400A24905 /* Externals */,
 				AE1D523C1A81595400A24905 /* tick-tack-toe */,
 				AE4E2D891A842376000752A4 /* tick-tack-toe Tests */,
+				AE4E2DA21A845017000752A4 /* Specs */,
 				AE4E2D801A842376000752A4 /* Frameworks */,
 				AE1D523B1A81595400A24905 /* Products */,
 			);
@@ -106,6 +141,7 @@
 			children = (
 				AE1D523A1A81595400A24905 /* tick-tack-toe.app */,
 				AE4E2D7F1A842376000752A4 /* tick-tack-toe Tests.xctest */,
+				AE4E2D9E1A845017000752A4 /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +227,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AE4E2DA21A845017000752A4 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				AE4E2DA51A845017000752A4 /* Rakefile */,
+				AE4E2DA81A845017000752A4 /* Specs-Info.plist */,
+				AE4E2DAA1A845017000752A4 /* Specs-Prefix.pch */,
+				AE4E2DAC1A845018000752A4 /* Cedar-iOS.framework */,
+				AE4E2DAE1A845018000752A4 /* Default-568h@2x.png */,
+				AE4E2DA31A845017000752A4 /* Supporting Files */,
+				AE4E2DB51A84502E000752A4 /* ViewControllerSpec.mm */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		AE4E2DA31A845017000752A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE4E2DA41A845017000752A4 /* Info.plist */,
+				AE4E2DA61A845017000752A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,6 +292,23 @@
 			productReference = AE4E2D7F1A842376000752A4 /* tick-tack-toe Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AE4E2D9D1A845017000752A4 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE4E2DB21A845018000752A4 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				AE4E2D9A1A845017000752A4 /* Sources */,
+				AE4E2D9B1A845017000752A4 /* Frameworks */,
+				AE4E2D9C1A845017000752A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = AE4E2D9E1A845017000752A4 /* Specs.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,6 +324,9 @@
 					AE4E2D7E1A842376000752A4 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = AE1D52391A81595400A24905;
+					};
+					AE4E2D9D1A845017000752A4 = {
+						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
@@ -266,6 +345,7 @@
 			targets = (
 				AE1D52391A81595400A24905 /* tick-tack-toe */,
 				AE4E2D7E1A842376000752A4 /* tick-tack-toe Tests */,
+				AE4E2D9D1A845017000752A4 /* Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +374,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4E2D9C1A845017000752A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4E2DAB1A845017000752A4 /* Specs-Prefix.pch in Resources */,
+				AE4E2DA91A845017000752A4 /* Specs-Info.plist in Resources */,
+				AE4E2DB81A84506F000752A4 /* ViewController.xib in Resources */,
+				AE4E2DAF1A845018000752A4 /* Default-568h@2x.png in Resources */,
+				AE4E2DBA1A845081000752A4 /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +431,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE4E2D9A1A845017000752A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4E2DB91A845072000752A4 /* AppDelegate.m in Sources */,
+				AE4E2DBB1A845084000752A4 /* CollectionViewCell.m in Sources */,
+				AE4E2DB71A84505E000752A4 /* ViewController.m in Sources */,
+				AE4E2DA71A845017000752A4 /* main.m in Sources */,
+				AE4E2DB61A84502E000752A4 /* ViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +628,51 @@
 			};
 			name = Release;
 		};
+		AE4E2DB31A845018000752A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE4E2DB41A845018000752A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Specs/Frameworks",
+				);
+				INFOPLIST_FILE = Specs/Info.plist;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -550,6 +699,14 @@
 			buildConfigurations = (
 				AE4E2D951A842376000752A4 /* Debug */,
 				AE4E2D961A842376000752A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE4E2DB21A845018000752A4 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE4E2DB31A845018000752A4 /* Debug */,
+				AE4E2DB41A845018000752A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

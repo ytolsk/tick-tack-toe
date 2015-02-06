@@ -30,6 +30,17 @@ describe(@"ViewController", ^{
             [controller.collectionView.visibleCells count] should equal(9);
         });
     });
+    
+    describe(@"should allow putting down Xs and Os", ^{
+        it(@"should display an X on first tap", ^{
+            NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
+            [controller.collectionView.delegate collectionView:controller.collectionView
+                                      didSelectItemAtIndexPath:indexPath];
+            
+            // arrays  always return objects of type id, can send any message compiler knows about to id, but can't use dot notation
+            [controller.collectionView.visibleCells[0] label].text should equal(@"X");
+        });
+    });
 });
 
 SPEC_END
